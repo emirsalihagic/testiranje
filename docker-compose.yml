@@ -7,4 +7,4 @@ services:
     volumes: 
       - .:/katalon/katalon/source
     entrypoint: katalonc.sh
-    command: -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"
+    command: -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_regresija"
