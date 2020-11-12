@@ -18,13 +18,19 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('test_case_1'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/svg_Payloads_normal selected'))
+WebUI.callTestCase(findTestCase('screenshot'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/input_Name_general.0.PayloadDisplayName'), 'payload_1')
+WebUI.callTestCase(findTestCase('test_case_3'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/li_AirPlay SecurityNot configured'))
+WebUI.callTestCase(findTestCase('screenshot'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('test_case_4'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('screenshot'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/button_Configure'))
+
+WebUI.callTestCase(findTestCase('screenshot'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/div_Devices on any WI-FI network'))
 
